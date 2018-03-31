@@ -20,7 +20,7 @@ plugin manager. Install it! 🌺
 
 > Clone this repository to your home directory
 
-	https://github.com/siwatpru/vimrc.git ~/vimrc
+	git clone https://github.com/siwatpru/vimrc.git ~/vimrc
 
 > Create symlink for .vimrc
 
