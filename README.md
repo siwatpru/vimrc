@@ -24,7 +24,7 @@ plugin manager. Install it! 🌺
 
 > Create symlink for .vimrc
 
-	ln -s $HOME/vimrc ~/.vimrc
+	ln -s $HOME/vimrc/vimrc ~/.vimrc
 
 > Run plugin setup
 
