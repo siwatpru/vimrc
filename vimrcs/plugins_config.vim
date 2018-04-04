@@ -76,6 +76,7 @@ let g:startify_custom_header = [
 
 " Pretier.js
 autocmd FileType javascript.jsx,javascript setlocal formatprg=prettier\ --stdin
+let g:prettier#exec_cmd_async = 1
 
 " Gruvbox
 colorscheme gruvbox

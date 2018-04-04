@@ -60,6 +60,11 @@ This is the vim plugin for the awesome code formatter
 [Prettier](https://github.com/prettier/prettier) Use `<Leader> p`
 to format the file.
 
+Async mode for vim-prettier is selected as default. If your vim
+version is not 8+, you can disable this feature at `vimrcs/plugins-config.vim`
+change `prettier#exec_cmd_async` at line `79` to `0`
+
+
 ### vim-commentary
 
 This plugin makes commenting out stuff much easier. Use `gcc` to
