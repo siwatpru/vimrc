@@ -94,3 +94,6 @@ let g:ycm_semantic_triggers['typescript'] = ['.']
 " IndentLine
 let g:indentLine_setConceal = 0
 
+" rust.vim
+autocmd FileType rust nmap <Leader>p :RustFmt<CR>
+
