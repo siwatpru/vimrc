@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 " Autocomplete
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-Plug 'yggdroot/indentline'
+Plug 'Yggdroot/indentline'
 
 " Searching
 Plug 'eugen0329/vim-esearch'
@@ -22,6 +22,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'easymotion/vim-easymotion'
 Plug 'haya14busa/vim-operator-flashy'
 Plug 'kana/vim-operator-user'
+Plug 'mhinz/vim-mix-format'
 Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-commentary'
@@ -45,6 +46,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Language
+Plug 'elixir-editors/vim-elixir'
 Plug 'leafgarland/typescript-vim'
 Plug 'mxw/vim-jsx'
 Plug 'neovimhaskell/haskell-vim'
@@ -52,7 +54,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'posva/vim-vue'
 Plug 'rust-lang/rust.vim'
 Plug 'sheerun/vim-polyglot'
-
 
 call plug#end()
 
