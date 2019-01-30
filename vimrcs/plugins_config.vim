@@ -4,8 +4,8 @@ nmap <Leader>F :GFiles<CR>
 nmap <c-p> :Files<CR>
 nmap <Leader>b :Buffers<CR>
 nmap <Leader>h :History<CR>
-nmap <Leader>t :BTags<CR>
-nmap <Leader>T :Tags<CR>
+" nmap <Leader>t :BTags<CR>
+" nmap <Leader>T :Tags<CR>
 nmap <Leader>l :BLines<CR>
 nmap <Leader>L :Lines<CR>
 nmap <Leader>' :Marks<CR>
@@ -79,8 +79,9 @@ autocmd FileType javascript.jsx,javascript setlocal formatprg=prettier\ --stdin
 let g:prettier#exec_cmd_async = 1
 
 " Gruvbox
-colorscheme gruvbox
 let base16colorspace=256
+let g:gruvbox_italic=1
+colorscheme gruvbox
 
 " React
 let g:jsx_ext_required = 0
@@ -96,4 +97,42 @@ let g:indentLine_setConceal = 0
 
 " rust.vim
 autocmd FileType rust nmap <Leader>p :RustFmt<CR>
+
+" Alchemist.vim
+let g:alchemist_tag_disable = 1
+
+" Tagbar
+nmap <leader>t :TagbarToggle<CR>
+let g:tagbar_type_elixir = {
+    \ 'ctagstype' : 'elixir',
+    \ 'kinds' : [
+        \ 'f:functions',
+        \ 'functions:functions',
+        \ 'c:callbacks',
+        \ 'd:delegates',
+        \ 'e:exceptions',
+        \ 'i:implementations',
+        \ 'a:macros',
+        \ 'o:operators',
+        \ 'm:modules',
+        \ 'p:protocols',
+        \ 'r:records',
+        \ 't:tests'
+    \ ]
+\ }
+autocmd FileType elixir call tagbar#autoopen(0)
+autocmd FileType python call tagbar#autoopen(0)
+autocmd FileType cpp call tagbar#autoopen(0)
+autocmd FileType cs call tagbar#autoopen(0)
+
+" YOucompleteme
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
+" Vim-flow
+let g:flow#autoclose = 1
+let g:flow#enable = 1
+
+" Snip
+let g:UltiSnipsExpandTrigger="<C-s>"
 
